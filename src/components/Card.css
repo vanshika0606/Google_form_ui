@@ -1,0 +1,181 @@
+.card1,
+.card2, .card3 , .card4{
+  color: rgba(110, 110, 110, 0.994);
+  border: 1px solid #d1d1d1;
+  max-width: 680px;
+  text-align: left;
+  border-top: 12px solid rgb(106, 7, 198);
+  border-radius: 10px;
+  background-color: white;
+
+  /* margin: auto; */
+}
+.card1 > h1 {
+  color: black;
+  padding: 15px 20px;
+  font-weight: normal;
+}
+.card1 > div {
+  border: 1px solid rgb(209, 209, 209);
+  border-left: 0px;
+  border-right: 0px;
+  padding: 15px 20px;
+}
+
+.card1-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.card1-grid-item1 {
+  font-weight: bold;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.card1-grid > p {
+  color: rgb(93, 93, 255);
+}
+.draft-saved {
+  display: flex;
+  align-items: start;
+  font-size: 0.8rem;
+}
+.card1 > div > p {
+  font-size: 0.87rem;
+}
+.card1 > h3 {
+  color: red;
+  font-size: 0.85rem;
+  padding: 15px 20px;
+  font-weight: bold;
+}
+
+.card2, .card3 , .card4{
+  border: 1px solid #d1d1d1;
+  padding: 20px;
+  padding-bottom: 30px;
+  gap: 20px;
+  color: black;
+  grid-template-rows: 1.5rem repeat(3, 1.8rem);
+}
+
+.checkmark {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid black;
+  z-index: 1;
+  margin-right:20px;
+}
+.card2 > label {
+  position: relative;
+}
+
+input[type="radio"]:checked::before,
+input[type="radio"]:not(checked)::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: blueviolet;
+  border-radius: 50%;
+  position: absolute;
+  top: 4.5px;
+  left: 4.5px;
+}
+input[type="radio"]:checked + .checkmark {
+  border: 2px solid blueviolet;
+
+  transition: 120ms ease-in-out;
+}
+
+input[type="radio"] :checked:focus::before, input[type="checkbox"]:checked:focus::before {
+  outline: 15px solid rgb(222, 213, 232);
+}
+
+input[type="radio"]:not(:checked)::before {
+  background-color: rgb(255, 255, 255);
+}
+
+input[type="radio"]:not(:checked):hover::before, input[type="checkbox"]:not(:checked):hover::before  {
+  outline: 15px solid rgb(247, 243, 250);
+  background-color: rgb(247, 243, 250);
+}
+
+input[type="radio"]:checked:hover::before {
+  outline: 15px solid rgb(222, 213, 232);
+}
+
+.mcq {
+  display: flex;
+}
+
+input[type="radio"] {
+  display: grid;
+  place-content: center;
+  appearance: none;
+}
+
+
+input[type="checkbox"]:checked::before,
+input[type="checkbox"]:not(checked)::before  {
+    content:'\2713';
+    color:white;
+    width: 20px;
+    height: 20px;
+    background-color: blueviolet;
+    position: absolute;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 0.95rem;
+    
+    /* left: 11px; */
+}
+
+input[type="checkbox"]:not(checked)::before {
+    background-color: white;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+}
+
+input[type="checkbox"]:checked + .checkbox{
+    border: 1px solid blueviolet;
+}
+.checkbox{
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    margin-right:20px;
+    border-radius: 3px;
+}
+
+input[type="checkbox"]:checked:hover::before {
+    outline: 15px solid rgb(222, 213, 232);
+}
+.card3 > input{
+    outline: none;
+    border:0px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+    width: 16rem;
+    border-bottom: 1.2px solid black;
+    padding-bottom: 5px;
+}
+
+.card3 >input[type="text"]:focus{
+    border-bottom:2px solid blueviolet;
+    transition: 120ms ease-in-out;
+}
+
+.card3 > .long{
+    width: 98%;
+}
+  
+
