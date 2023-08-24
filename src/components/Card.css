@@ -1,5 +1,7 @@
 .card1,
-.card2, .card3 , .card4{
+.card2,
+.card3,
+.card4 {
   color: rgba(110, 110, 110, 0.994);
   border: 1px solid #d1d1d1;
   max-width: 680px;
@@ -53,7 +55,9 @@
   font-weight: bold;
 }
 
-.card2, .card3 , .card4{
+.card2,
+.card3,
+.card4 {
   border: 1px solid #d1d1d1;
   padding: 20px;
   padding-bottom: 30px;
@@ -69,14 +73,14 @@
   display: inline-block;
   border: 1px solid black;
   z-index: 1;
-  margin-right:20px;
+  margin-right: 20px;
 }
 .card2 > label {
   position: relative;
 }
 
 input[type="radio"]:checked::before,
-input[type="radio"]:not(checked)::before{
+input[type="radio"]:not(checked)::before {
   content: "";
   width: 10px;
   height: 10px;
@@ -92,7 +96,8 @@ input[type="radio"]:checked + .checkmark {
   transition: 120ms ease-in-out;
 }
 
-input[type="radio"] :checked:focus::before, input[type="checkbox"]:checked:focus::before {
+input[type="radio"] :checked:focus::before,
+input[type="checkbox"]:checked:focus::before {
   outline: 15px solid rgb(222, 213, 232);
 }
 
@@ -100,7 +105,8 @@ input[type="radio"]:not(:checked)::before {
   background-color: rgb(255, 255, 255);
 }
 
-input[type="radio"]:not(:checked):hover::before, input[type="checkbox"]:not(:checked):hover::before  {
+input[type="radio"]:not(:checked):hover::before,
+input[type="checkbox"]:not(:checked):hover::before {
   outline: 15px solid rgb(247, 243, 250);
   background-color: rgb(247, 243, 250);
 }
@@ -119,63 +125,106 @@ input[type="radio"] {
   appearance: none;
 }
 
-
 input[type="checkbox"]:checked::before,
-input[type="checkbox"]:not(checked)::before  {
-    content:'\2713';
-    color:white;
-    width: 20px;
-    height: 20px;
-    background-color: blueviolet;
-    position: absolute;
-    border-radius: 3px;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 0.95rem;
-    
-    /* left: 11px; */
+input[type="checkbox"]:not(checked)::before {
+  content: "\2713";
+  color: white;
+  width: 20px;
+  height: 20px;
+  background-color: blueviolet;
+  position: absolute;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 0.95rem;
+
+  /* left: 11px; */
 }
 
 input[type="checkbox"]:not(checked)::before {
-    background-color: white;
+  background-color: white;
 }
 
-input[type="checkbox"]{
-    appearance: none;
+input[type="checkbox"] {
+  appearance: none;
 }
 
-input[type="checkbox"]:checked + .checkbox{
-    border: 1px solid blueviolet;
+input[type="checkbox"]:checked + .checkbox {
+  border: 1px solid blueviolet;
 }
-.checkbox{
-    width: 19px;
-    height: 19px;
-    display: inline-block;
-    margin-right:20px;
-    border-radius: 3px;
+.checkbox {
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 3px;
 }
 
 input[type="checkbox"]:checked:hover::before {
-    outline: 15px solid rgb(222, 213, 232);
+  outline: 15px solid rgb(222, 213, 232);
 }
-.card3 > input{
-    outline: none;
-    border:0px;
-    margin-top: 40px;
-    margin-bottom: 25px;
-    font-size: 0.9rem;
-    width: 16rem;
-    border-bottom: 1.2px solid black;
-    padding-bottom: 5px;
-}
-
-.card3 >input[type="text"]:focus{
-    border-bottom:2px solid blueviolet;
-    transition: 120ms ease-in-out;
+.card3 > input {
+  outline: none;
+  border: 0px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+  width: 16rem;
+  border-bottom: 1.2px solid black;
+  padding-bottom: 5px;
 }
 
-.card3 > .long{
-    width: 98%;
+.card3 > input[type="text"]:focus {
+  border-bottom: 2px solid blueviolet;
+  transition: 120ms ease-in-out;
 }
-  
 
+.card3 > .long {
+  width: 98%;
+}
+
+.dropdown {
+  margin-top: 20px;
+  position: relative;
+}
+.selected {
+  border: 1px solid #d1d1d1;
+  max-width: 170px;
+  padding: 12px 15px;
+  border-radius: 5px;
+  color: rgb(94, 94, 94);
+}
+
+.dropdownList {
+  border: 1px solid #d1d1d1;
+  width: 175px;
+  padding: 8px 0;
+  gap: 7px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  z-index: 1;
+  background-color: white;
+}
+.dropdownList > p {
+  padding: 10px;
+  z-index: 1;
+}
+
+.dropdownList :first-child {
+  background-color: rgb(233, 233, 249);
+  color:#505050;
+}
+.gray{
+  color:#505050;
+}
+.black{
+  color: black;
+}
+.dropdownList :hover {
+  background-color: #dddddd;
+}
+.dropdownList :first-child:hover {
+  background-color: #f0f0f0;
+}

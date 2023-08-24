@@ -51,3 +51,12 @@
 .grid{
   display: grid;
 }
+.row{
+  flex-direction: row;
+}
+.spaceBetween{
+  justify-content: space-between;
+}
+.alignCenter{
+  align-items: center;
+}
